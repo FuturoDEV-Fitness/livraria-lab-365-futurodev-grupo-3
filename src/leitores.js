@@ -39,7 +39,11 @@ async function run() {
             break;
 
         case 'deletar': {
-            /* Coloque sua resposta aqui */
+            const codigo = await input.question('Digite o código do leitor que deseja deletar: ');
+
+            const crud = new LeitorCrud();
+            crud.deletar(codigo);
+            
             input.close();
             break;
         }
