@@ -6,7 +6,7 @@ class LeitorCrud {
     }
 
     criar(leitor) {
-        
+
         // lê o conteúdo que já existe no JSON
         const conteudoAtual = JSON.parse(fs.readFileSync(this.filePath, 'utf-8'));
 
@@ -24,6 +24,18 @@ class LeitorCrud {
             JSON.stringify(conteudoAtual, null, 2), // null, 2 é para organizar o JSON
             'utf-8'
         )
+    }
+
+    consultar(palavra) {
+        const conteudoAtual = JSON.parse(fs.readFileSync(this.filePath, 'utf-8'));
+
+        const leitorEncontrado = conteudoAtual.find(leitor => leitor.nome === palavra);
+
+        if (leitorEncontrado) {
+            console.log('Leitor encontrado: ', leitorEncontrado);
+        } else {
+            console.log('Leitor não encontrado.');
+        }
     }
 
 }
