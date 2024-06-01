@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "nome": "escuridão total sem estrelas",
+    "codigo": "5525bea0-0f09-4ec8-9b63-c2c3bf85ab22",
+    "genero": "terror",
+    "autor": "stephen king",
+    "paginas": "400"
+  },
+  {
+    "nome": "uma vida pequena",
+    "codigo": "2bd36f33-7407-4f76-af2d-e1cdd5378375",
+    "genero": "drama",
+    "autor": "hanya yanagihara",
+    "paginas": "700"
+  },
+  {
+    "nome": "duna",
+    "codigo": "0f2709ce-bd3f-4b07-9ebb-27619c9e050c",
+    "genero": "sci-fi",
+    "autor": "frank herbert",
+    "paginas": "700"
+  },
+  {
+    "nome": "maniac",
+    "codigo": "2e61fd8e-2c47-49fc-9c69-d94dbe3c6539",
+    "genero": "ficção científica",
+    "autor": "benjamin labatut",
+    "paginas": "300"
+  },
+  {
+    "nome": "manifesto das espécies companheiras",
+    "codigo": "30eb6ff2-9aa9-4a31-8e1e-3464f2866cf9",
+    "genero": "ensaio",
+    "autor": "donna haraway",
+    "paginas": "200"
+  }
+]
