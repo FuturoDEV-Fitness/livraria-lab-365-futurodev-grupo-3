@@ -38,6 +38,25 @@ class LeitorCrud {
         }
     }
 
-}
+    deletar(codigo) {
+        const conteudoAtual = JSON.parse(fs.readFileSync(this.filePath, 'utf-8'));
 
+        // find retorna o objeto que atende a condição
+        const leitorCodigo = conteudoAtual.find(leitor => leitor.codigo === codigo);
+
+        if (leitorCodigo) {
+            // splice remove o item do array
+            conteudoAtual.splice(leitorCodigo, 1);
+
+            fs.writeFileSync(
+                this.filePath,
+                JSON.stringify(conteudoAtual, null, 2),
+                'utf-8'
+            )
+            console.log('Leitor deletado com sucesso!');
+        } else {
+            console.log('Leitor não encontrado.');
+        }
+    }
+}
 module.exports = LeitorCrud;
