@@ -43,11 +43,17 @@ async function run() {
             input.close();
             break;
         }
+
         case 'consultar': {
-            /* Coloque sua resposta aqui */
+            const palavra = await input.question('Digite o nome do leitor que deseja consultar: ');
+
+            const crud = new LeitorCrud();
+            crud.consultar(palavra);
+
             input.close();
             break;
         }
+
         default:
             console.log("Ação não reconhecida.");
             input.close();
