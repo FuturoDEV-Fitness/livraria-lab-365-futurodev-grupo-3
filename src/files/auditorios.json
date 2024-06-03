@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "codigo": "7ea13273-4eb1-4b5a-a327-f725e5a6e96b",
+    "nome": "Joaquina",
+    "descricao": "Joaca",
+    "lotacaoMaxima": "2000"
+  },
+  {
+    "codigo": "a914a9f1-f4e8-4db8-9be5-ddbce29014dd",
+    "nome": "tesssste",
+    "descricao": "testeeee",
+    "lotacaoMaxima": "4000"
+  }
+]
