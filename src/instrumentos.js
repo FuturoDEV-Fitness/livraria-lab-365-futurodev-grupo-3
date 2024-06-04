@@ -25,16 +25,19 @@ async function run() {
             instrumento.setEstado = estadoInstrumento;
             const crud = new InstrumentoCrud();
             crud.criar(instrumento)
-            console.log(`Instrumento cadastrado! Código: ${instrumento.getCodigo}, Instrumento: ${instrumento.getNome}, Tipo: ${instrumento.getTipo}, Estado: ${instrumento.getEstado}`);
             rl.close();
             break;
         case 'deletar': {
-            /* Coloque sua resposta aqui */
+            const codigo = await askQuestion("Qual é o código do instrumento que você deseja deletar? ");
+            const crud = new InstrumentoCrud();
+            crud.deletar(codigo)
             rl.close();
             break;
         }
         case 'consultar': {
-            /* Coloque sua resposta aqui */
+            const codigo = await askQuestion("Qual é o código do instrumento que você deseja consultar? ");
+            const crud = new InstrumentoCrud();
+            crud.consultar(codigo)
             rl.close();
             break;
         }
