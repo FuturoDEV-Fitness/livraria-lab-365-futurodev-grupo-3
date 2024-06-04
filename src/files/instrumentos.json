@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "codigo": "nx0h6TeHe",
+    "nome": "violão",
+    "tipo": "corda",
+    "estado": "danificado"
+  },
+  {
+    "codigo": "rYH7s73jB",
+    "nome": "bateria",
+    "tipo": "percussão",
+    "estado": "usado"
+  },
+  {
+    "codigo": "lPHG3prXg",
+    "nome": "violino",
+    "tipo": "corda",
+    "estado": "novo"
+  }
+]
