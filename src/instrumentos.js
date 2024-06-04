@@ -45,7 +45,7 @@ async function run() {
             console.log("Ação não reconhecida.");
             rl.close();
     }
-    
+
 }
-   
+
 run();
